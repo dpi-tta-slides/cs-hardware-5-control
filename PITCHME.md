@@ -6,9 +6,15 @@ paginate: true
 
 # CS Hardware - Day 5
 
-## Microcontrollers
+## Control
 
-![bg contain right](assets/microbit.jpg)
+![bg contain right](assets/apollo-mission-control.jpg)
+
+<!-- Alternate Image
+
+![bg contain right](assets/conductor.jpg)
+
+-->
 
 ---
 
@@ -21,7 +27,7 @@ By the end of today you will:
 - Connect software to hardware
 - Build interactive embedded systems
 
-![bg contain right](assets/microbit-board.jpg)
+![bg contain right](assets/microcontroller-overview.avif)
 
 ---
 
@@ -34,7 +40,7 @@ Yesterday we learned:
 - Digital systems use HIGH and LOW voltages
 - Computers depend on clocks
 
-![bg contain right](assets/555-timer-chip.jpeg)
+![bg contain right](assets/square-wave.png)
 
 ---
 
@@ -58,14 +64,24 @@ We learned:
 - Logic gates make decisions
 - Computers are built from billions of transistors
 
-![bg contain right](assets/cpu-closeup.jpeg)
+![bg contain right](assets/water-valve-analogy.jpeg)
 
-
-<!-- TODO: day 1 review -->
 
 ---
 
+# Review From Day 1
 
+Yesterday we learned:
+
+- Voltage pushes current
+- Resistance limits current
+- LEDs have polarity
+- Ohm's Law: **V = I × R**
+- Multimeters help us debug circuits
+
+![bg contain right](assets/hose-analogy.png)
+
+---
 
 <!-- 
 
@@ -93,10 +109,18 @@ In the 1960s, every calculator needed custom hardware.
 
 In 1964, Sharp introduced the world's first all-transistor diode desktop calculator, the Compet, CS-10A.
 
+desk sized
+~30 pounds
+
 -->
 
+---
 
-<!-- TODO: more desktop calculators -->
+![bg contain](assets/460e.jpg)
+
+---
+
+![bg contain](assets/desk-calculator.jpeg)
 
 ---
 
@@ -111,7 +135,17 @@ Calculators became:
 
 What changed?
 
-<!-- TODO: pocket calculator example images -->
+![bg contain right](assets/calculators-for-a-pocket.jpeg)
+
+---
+
+![bg contain](assets/hp-35.jpeg)
+
+---
+
+![bg contain](assets/sinclair-executive-calculator.jpeg)
+
+![bg contain](assets/sinclair-executive-ad.jpg)
 
 ---
 
@@ -135,27 +169,38 @@ Originally developed for calculators made by the Japanese company Busicom.
 
 ---
 
-## Yesterday
+# Yesterday
 
-One integrated circuit (IC) could generate a wave. (555 Timer)
+One integrated circuit (IC) could generate a wave.
 
-## Today
+![bg contain right](assets/555-timer-chip.jpeg)
 
-One integrated circuit (IC) can be programmed to perform many functions. This is a microprocessor (CPU).
 
 ---
 
-# Microprocessor
+# Today the CPU
 
-One chip could now perform many jobs.
 
-The same idea eventually led to:
+The Central Processing Unit (CPU) is the "brain" and performs many jobs,.
+
+
+This idea led to:
 
 - calculators
 - computers
 - microcontrollers
 - phones
 - embedded systems
+
+<!-- NOTES
+
+also called a microprocessor
+
+like reading instructions, performing calculations, and controlling outputs
+-->
+
+![bg contain right](assets/cpu.avif)
+
 
 ---
 
@@ -169,7 +214,7 @@ CPU + Memory + Inputs + Outputs
 
 All on one chip.
 
-![bg contain right](assets/microcontroller-chip.jpg)
+![bg contain right](assets/microcontroller-overview.avif)
 
 <!-- 
 
@@ -216,7 +261,7 @@ Most computers today are not PCs. They are tiny specialized computers called emb
 - cars
 - robots
 
-![bg contain right](assets/embedded-systems.jpg)
+![bg contain right](assets/embedded-systems.png)
 
 ---
 
@@ -244,6 +289,7 @@ Built-in:
 - Compass
 - Temperature sensor
 - Radio
+- and more!
 
 ![bg contain right](assets/microbit-labeled.avif)
 
@@ -257,7 +303,7 @@ HELLO WORLD
 
 on the LED matrix.
 
-![bg contain right](assets/microbit-hello.gif)
+![bg contain right](assets/hello-world.gif)
 
 <!-- 
 
@@ -281,36 +327,9 @@ Requirements:
 - Add an icon
 - Customize the message
 
-![bg contain right](assets/name-badge.gif)
+![bg contain right](assets/hello-world.gif)
 
----
-
-# The CPU
-
-The Central Processing Unit (CPU) is the "brain."
-
-It:
-
-- reads instructions
-- performs calculations
-- controls outputs
-
-![bg contain right](assets/cpu-closeup.jpeg)
-
----
-
-# Memory
-
-Memory stores:
-
-- programs
-- variables
-- sensor readings
-
-![bg contain right](assets/ram-chip.jpg)
-
----
-
+<!-- TODO: show don't tell
 # Inputs
 
 Inputs tell the computer what is happening.
@@ -337,12 +356,11 @@ Examples:
 - motors
 - displays
 
-![bg contain right](assets/led-matrix.jpg) 
+![bg contain right](assets/led-matrix.jpg)  -->
 
 ---
 
-
-Imagine designing a traffic light
+# Imagine designing a traffic light
 
 You need it to:
 - switch lights at the right time
@@ -350,9 +368,11 @@ You need it to:
 - respond to emergencies
 - coordinate with nearby intersections
 
-<!-- TODO: image -->
+![bg contain right](assets/traffic-light.jpg)
 
----
+<!-- INSTRUCTOR NOTES
+
+old traffic light controller with relays
 
 You could build this using:
 - transistors
@@ -362,9 +382,9 @@ You could build this using:
 
 But every new feature requires rewiring hardware.
 
-Changing this behavior using software makes this much easier. This is where a microcontroller shines
+Changing this behavior using software makes this much easier. This is where a microcontroller shines 
 
-<!-- TODO: image of old traffic light controller with relays -->
+-->
 
 ---
 
@@ -372,7 +392,7 @@ Changing this behavior using software makes this much easier. This is where a mi
 
 - Let's build a mini traffic light using the Micro:bit
 
-<!-- TODO: image -->
+![bg contain right](assets/microbit-traffic-light.gif)
 
 ---
 
@@ -382,7 +402,7 @@ Changing this behavior using software makes this much easier. This is where a mi
 
 Create a traffic light using the Micro:bit, a breadboard, and LEDs
 
-![bg contain right](assets/microbit-traffic-light.jpg)
+![bg contain right](assets/microbit-traffic-light.gif)
 
 ---
 
