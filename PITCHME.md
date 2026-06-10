@@ -181,7 +181,7 @@ One integrated circuit (IC) could generate a wave.
 # Today the CPU
 
 
-The Central Processing Unit (CPU) is the "brain" and performs many jobs,.
+The Central Processing Unit (CPU) is the "brain" and performs many jobs.
 
 
 This idea led to:
